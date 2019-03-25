@@ -1,4 +1,9 @@
 # TwinklingRefreshLayout
+
+这是别人的一做好的一个工具类, 我fork了, 但是因为服务器太慢的原因, 我一直没有成功的将项目clone下来, 下载zip文件却很快, 我为了修改和以后依赖使用方便, 就上传到自己的github上了, 这是是原作者的地址:
+<br/>
+[https://github.com/lcodecorex/TwinklingRefreshLayout](https://github.com/lcodecorex/TwinklingRefreshLayout)
+<br/><br/>
 TwinklingRefreshLayout延伸了Google的SwipeRefreshLayout的思想,不在列表控件上动刀,而是使用一个ViewGroup来包含列表控件,以保持其较低的耦合性和较高的通用性。其主要特性有：
 
 1. 支持RecyclerView、ScrollView、AbsListView系列(ListView、GridView)、WebView以及其它可以获取到scrollY的控件
