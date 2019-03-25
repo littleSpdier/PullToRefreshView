@@ -19,7 +19,9 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 import com.lcodecore.tkrefreshlayout.footer.BallPulseView;
+import com.lcodecore.tkrefreshlayout.footer.LoadingView;
 import com.lcodecore.tkrefreshlayout.header.GoogleDotView;
+import com.lcodecore.tkrefreshlayout.header.SinaRefreshView;
 import com.lcodecore.tkrefreshlayout.processor.AnimProcessor;
 import com.lcodecore.tkrefreshlayout.processor.IDecorator;
 import com.lcodecore.tkrefreshlayout.processor.OverScrollDecorator;
@@ -191,7 +193,8 @@ public class TwinklingRefreshLayout extends RelativeLayout implements PullListen
                     setHeaderView(new GoogleDotView(getContext()));
                 }
             } else {
-                setHeaderView(new GoogleDotView(getContext()));
+//                setHeaderView(new GoogleDotView(getContext()));
+                setHeaderView(new SinaRefreshView(getContext()));
             }
         }
     }
@@ -216,7 +219,8 @@ public class TwinklingRefreshLayout extends RelativeLayout implements PullListen
                     setBottomView(new BallPulseView(getContext()));
                 }
             } else {
-                setBottomView(new BallPulseView(getContext()));
+//                setBottomView(new BallPulseView(getContext()));
+                setBottomView(new LoadingView(getContext()));
             }
         }
     }
